@@ -98,22 +98,58 @@ function isEqual(firstWord,secondWordrespectively){
     return "Y U NO MATCH!";
   }
 }
-console.log(isEqual('dog','cat'));
+console.log(isEqual('dog','dog'));
 
 /*Function - isNotEqual
 Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'.*/
+function isNotEqual(firstWord, secondWordrespectively){
+if(firstWord === secondWordrespectively){
+  return "AWWWWRIGHT";
+}else{
+  return "Y U NO MATCH";
+  }
+}
+console.log(isNotEqual("kitty","cat"));
 
 
 /*Function - doubleEquals
 Write a function that takes two variables of type Boolean called first and secondrespectively. Return true if both values are true otherwise return false.*/
+function doubleEquals(first, second){
+  if (first && second === true){
+    return true;
+  }else{
+    return false;
+  }
+}
+doubleEquals();
+console.log("doubleEquals", doubleEquals(true, true));
+console.log("doubleEquals", doubleEquals(false, true));
+
 
 /*Function - totalOver30
 Write a function that takes three variables of type Number called first and second and third respectively. Return true if the sum of all values are greater than 30 otherwise return false.*/
+function totalOver30(first,second,thrid){
+if (first + second + thrid > 30){
+  return true;
+}else {
+  return false;
+}
+}
+totalOver30();
+console.log('totalover30', totalOver30(12,13,14));
+console.log('totalover30', totalOver30(1,3,4));
 
 /*Function - totalUnderWhat
 Write a function that takes four variables of type Number called first and second and third and fourth respectively. Return true if the sum of first, second and third are less than fourth otherwise return false.*/
-
-
+function totalUnderWhat(first, second, third, fourth){
+  if(first + second + third < fourth){
+    return true;
+  }else{
+    return false;
+  }
+}
+totalUnderWhat();
+console.log
 /*Function - looptoNumber
 Write a function that takes in a Number value named limit and have the function write a for loop that loops the number of times of limit and console.log each number as the loop executes.*/
 

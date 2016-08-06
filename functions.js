@@ -45,24 +45,60 @@ function makeCrazyLongString(string){
 Function - youGetTaco
 Write a function that takes a single String parameter called action. If the value passed into our function is eathave the function return the String value EAT TACOS.
 */
-
-
+function youGetTaco(action){
+  if (action ==="eat"){
+    return "EAT TACOS";
+  }
+}
+youGetTaco();
+console.log(youGetTaco("eat"));
 /*Function - isNumberGreaterThan
 Write a function that takes two variables of type Number called first and secondrespectively. Return true if the first number is greater than the second.*/
-
-
+function isNumberGreaterThan(n1,n2){
+  if(n1>n2){
+    return true;
+  }else{
+    return false;
+  }
+}
+isNumberGreaterThan();
+console.log("isNumberGreaterThan", isNumberGreaterThan(1,2))
+console.log("isNumberGreaterThan", isNumberGreaterThan(2,1))
 
 /*Function - isTrue
 Write a function that takes in a Boolean value named val and have the function return whether the value is true.*/
+function isTrue(val){
+  if (val>=21){
+    return true;}
+    else{
+      return false;
+    }
+  }
 
+isTrue();
+console.log("isTrue", isTrue(26));
 /*Function - isFalse
 Write a function that takes in a Boolean value named val and have the function return whether the value is false.*/
+function isFalse(val){
+  if(val>100){
+    return true;
+  }else{
+    return false;
+  }
+}
 
-
-
+isFalse();
+console.log('isFalse', isFalse(1))
 /*Function - isEqual
 Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are equal otherwise return 'Y U NO MATCH!'.*/
-
+function isEqual(firstWord,secondWordrespectively){
+  if(firstWord === secondWordrespectively){
+    return "AWWWWRIGHT";
+  }else{
+    return "Y U NO MATCH!";
+  }
+}
+console.log(isEqual('dog','cat'));
 
 /*Function - isNotEqual
 Write a function that takes two variables of type String called firstWord and secondWordrespectively. Return 'AWWWWRIGHT' if the two are not equal otherwise return 'Y U MATCH!'.*/
